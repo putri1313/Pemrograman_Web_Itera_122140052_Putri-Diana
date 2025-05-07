@@ -1,0 +1,147 @@
+/* Font dan reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #fefcf8;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Container Utama */
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+    color: #004e89;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Card Style */
+  .card {
+    background: #ffffff;
+    border: 1px solid #e6ecf0;
+    border-left: 6px solid #4a90e2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 25px;
+    margin-bottom: 25px;
+  }
+  
+  /* Jam */
+  .clock {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004e89;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  /* Form Input */
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .task-form input,
+  .task-form button {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .task-form input {
+    flex: 1;
+  }
+  
+  .task-form button {
+    background-color: #004e89;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .task-form button:hover {
+    background-color: #003566;
+  }
+  
+  /* Daftar Tugas */
+  .task-list {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  .task-item {
+    background-color: #f5faff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border-left: 4px solid #0077cc;
+  }
+  
+  .task-checkbox {
+    transform: scale(1.2);
+    margin-top: 5px;
+  }
+  
+  .task-content {
+    flex: 1;
+  }
+  
+  .task-content strong {
+    font-size: 1rem;
+    color: #222;
+  }
+  
+  .task-content span {
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
+  /* Style tugas selesai */
+  .completed {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999;
+    margin-top: auto;
+    padding: 20px 0;
+  }
+  

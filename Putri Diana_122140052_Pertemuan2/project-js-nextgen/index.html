@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Dashboard Tugas</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <div class="container">
+    <header class="header">
+      <h1>📋 Personal Dashboard Tugas</h1>
+      <p class="subtitle">Pantau waktumu dan kelola tugasmu dengan mudah!</p>
+    </header>
+
+    <main>
+      <section class="clock-section card">
+        <h2>🕒 Waktu Saat Ini (WIB)</h2>
+        <p id="clock" class="clock">Loading...</p>
+      </section>
+
+      <section class="task-section card">
+        <h2>📝 Daftar Tugas</h2>
+        <form id="task-form" class="task-form">
+          <div class="form-group">
+            <input type="text" id="task-input" placeholder="Masukkan nama tugas..." required>
+            <input type="datetime-local" id="deadline-input" required>
+            <button type="submit">➕ Tambah</button>
+          </div>
+        </form>
+
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <p class="footer">&copy; 2025 Personal Dashboard - by Putri Diana - 122140052</p>
+    </footer>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
