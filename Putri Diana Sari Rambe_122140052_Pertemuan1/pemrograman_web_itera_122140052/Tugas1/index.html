@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-purple-300 to-blue-500 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md lg:max-w-lg transform hover:rotate-1 transition duration-300">
+        <h1 class="text-4xl font-bold mb-6 text-center text-gray-800">to-do list</h1>
+        <form id="todo-form" class="flex mb-4 gap-2">
+            <input type="text" id="task-input" placeholder="Tambahkan To-do List..." class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md font-medium">Tambah</button>
+        </form>
+        <ul id="todo-list" class="space-y-3 text-gray-700 font-medium"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

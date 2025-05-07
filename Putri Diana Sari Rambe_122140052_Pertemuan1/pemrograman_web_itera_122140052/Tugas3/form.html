@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validasi Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Form Pendaftaran</h2>
+      <form id="registerForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+        <small id="nameError" class="error"></small>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <small id="emailError" class="error"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <small id="passwordError" class="error"></small>
+
+        <button type="submit">Daftar</button>
+      </form>
+    </div>
+    <script src="form.js"></script>
+  </body>
+</html>
